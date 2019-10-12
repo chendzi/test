@@ -1,0 +1,62 @@
+{
+	"info": {
+		"_postman_id": "b834ce10-71b1-4db3-a0c1-911f6304e5cc",
+		"name": "test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://127.0.0.1:8081/order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"symbol\": \"SBI\", \"side\": \"buy\", \"price\": \"2271\", \"quantity\": \"20\" }"
+				},
+				"url": {
+					"raw": "https://127.0.0.1:8081/order",
+					"protocol": "https",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://127.0.0.1:8081/book",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"symbol\": \"SBI\" }"
+				},
+				"url": {
+					"raw": "https://127.0.0.1:8081/book",
+					"protocol": "https",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"book"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
